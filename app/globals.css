@@ -284,8 +284,38 @@ table {
 
 /* footer */
 
-footer>div {
-  padding: 30px 5%;
+footer>:first-child {
+  position: relative;
+  padding: 30px;
+  background-image: url("/images/.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer>:first-child >div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer>:first-child >div img {
+  width: 100px;
+  height: auto;
+}
+
+footer>:last-child {
+  padding: 30px 5% 50px;
+  color: #aaa;
+}
+
+footer>:last-child ul{
+  margin: 10px 0 40px;
+}
+
+footer>:last-child ul li span {
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
@@ -339,6 +369,12 @@ footer>div {
   /* main */
 
   /* article */
+
+  article>div {
+    width: 1200px;
+    padding: 150px 0;
+    margin: 0 auto;
+  }
 
   /* form */
 
